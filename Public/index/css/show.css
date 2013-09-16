@@ -1,0 +1,66 @@
+body {
+  font-family:Microsoft YaHei,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: url("http://dw-resources.qiniudn.com/images/patterns/mooning.jpg") repeat scroll 0 0 #E5E5E5;
+  font-size: 12px;
+}
+.hero-unit {
+  margin-top:40px;
+  background: url("./images/cover.jpg") no-repeat fixed top left;
+  color: #FFFFFF;
+  height: 480px;
+  margin-bottom: 0;
+  position: relative;
+}
+.hero-unit h1 {
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+.description {
+  position: relative;
+  margin-top: -205px;
+}
+.panel-description {
+  margin-bottom: 100px;
+}
+.panel-description {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0 20px 70px 8px rgba(0, 0, 0, 0.05);
+  color: #333333;
+  margin-bottom: 80px;
+  padding: 0;
+  text-shadow: 1px 1px 2px #FFFFFF;
+}
+.padding-middle {
+  padding: 25px;
+}
+*::-moz-selection {
+  background: none repeat scroll 0 0 #D3D3D3;
+  color: #555555;
+}
+.panel {
+  margin-bottom: 140px;
+}
+.panel {
+  background: url("http://dw-resources.qiniudn.com/images/patterns/white_wall_hash.jpg") repeat scroll 0 0 #FFFFFF;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0 20px 70px 8px rgba(0, 0, 0, 0.25);
+  color: #333333;
+  display: none;
+  margin-bottom: 120px;
+  padding: 0;
+}
+.block-left {
+  padding: 35px 10px 15px 45px;
+}
+p {
+  cursor: default;
+  font: 500 15px/1.8 'Optima','Songti SC','Verdana','Microsoft Yahei',simsun,serif;
+}
+.padding-large {
+  padding: 45px;
+}
+a.thumbnail {
+  color: #333333;
+  text-decoration: none;
+}
