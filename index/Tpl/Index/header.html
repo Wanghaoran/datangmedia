@@ -1,0 +1,29 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="__ROOT__" style="color: white;">大唐兄弟传媒</a>
+            <ul class="nav">
+                <li><a href="__ROOT__">首页</a></li>
+                <if condition="ACTION_NAME eq 'show'">
+                    <li class="active"><a href="__URL__/show">简述</a></li>
+                    <else/>
+                    <li><a href="__URL__/show">简述</a></li>
+                </if>
+                <if condition="ACTION_NAME eq 'artists'">
+                    <li class="active"><a href="__URL__/artists">艺人</a></li>
+                    <else/>
+                    <li><a href="__URL__/artists">艺人</a></li>
+                </if>
+
+
+                <if condition="ACTION_NAME eq 'movie'">
+                    <li class="active"><a href="__URL__/movie">电影</a></li>
+                    <else/>
+                    <li><a href="__URL__/movie">电影</a></li>
+                </if>
+                <li><a href="#tv">电视</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
