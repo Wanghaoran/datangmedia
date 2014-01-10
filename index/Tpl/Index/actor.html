@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>艺人 - 大唐兄弟传媒</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="__PUBLIC__/index/css/show.css" rel="stylesheet">
+    <script src="__PUBLIC__/index/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        .galleryContainer {width: 1024px;margin:0 auto;}
+        /* galleryImage */
+        .galleryImage{background-color:black;width:325px;height:260px;overflow:hidden;margin:5px;float:left;}
+        .info{margin-left:10px;font-family:arial;padding:3px;}
+        .info h2{color:gray;}
+        .info p{color:white}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('.galleryImage').hover(function(){
+                $(this).find('img').animate({width:100, marginTop:10, marginLeft:10},500);
+            },function(){
+                $(this).find('img').animate({width:325, marginTop:0, marginLeft:0},300);
+            });
+
+        });
+    </script>
+</head>
+<body>
+<!-- header start -->
+<include file="Index:header"/>
+<!-- header end -->
+
+
+<!-- content start -->
+<div class="container">
+    <div class="galleryContainer"  style="margin-top: 80px;">
+
+        <!--galleryEntry-->
+        <div class="galleryImage">
+            <img src="__UPLOAD__/file/chengchun.png" style="width: 325px; display: inline; margin-top: 0px; margin-left: 0px;">
+            <div class="info">
+                <h2>程春</h2>
+                <p> 年龄：32身高：176CM</p>
+                <p>代表作品：江苏电视台电视剧《祸起艳照》男一号李念</p>
+            </div>
+        </div>
+        <!--end galleryEntry-->
+
+        <!--galleryEntry-->
+        <div class="galleryImage">
+            <img src="__UPLOAD__/file/fubing.png">
+            <div class="info">
+                <h2>付冰</h2>
+                <p>做演员最难掌握的性格并不是“戏里”的角色，而是“戏外”的自己。</p>
+            </div>
+        </div>
+        <!--end galleryEntry-->
+
+        <!--
+        <div class="galleryImage">
+            <img src="images/image03.jpg">
+            <div class="info">
+                <h2>Black Eyed Peas</h2>
+                <p>The Black Eyed Peas is a Grammy Award winning hip hop group that formed in Los Angeles, California in 1995.</p>
+            </div>
+        </div>
+        -->
+
+        <!--
+        <div class="galleryImage">
+            <img src="images/image04.jpg" style="width: 325px; display: inline; margin-top: 0px; margin-left: 0px;">
+            <div class="info">
+                <h2>Lady Antebellum</h2>
+                <p>Lady Antebellum is an American country music group formed in Nashville, Tennessee in 2006. </p>
+            </div>
+        </div>
+        -->
+
+        <!--
+        <div class="galleryImage">
+            <img src="images/image05.jpg">
+            <div class="info">
+                <h2>Lady Gaga</h2>
+                <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just Dance" and "Poker Face".</p>
+            </div>
+        </div>
+        -->
+
+        <!--
+        <div class="galleryImage">
+            <img src="images/image06.jpg">
+            <div class="info">
+                <h2>The Killers</h2>
+                <p>The Killers is an American rock band from Las Vegas, Nevada, formed in 2002 who have sold over 16 million records worldwide.</p>
+            </div>
+        </div>
+        -->
+
+    </div>
+
+</div>
+
+
+<!-- content end -->
+</body>
+</html>
