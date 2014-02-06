@@ -17,11 +17,21 @@ class IndexAction extends Action
     }
 
     public function actor(){
+        $Actor = M('Actor');
+        $result = $Actor -> field('id,pic,name,description') -> order('sort ASC') -> select();
+        $this -> assign('result', $result);
         $this -> display();
     }
 
-  public function movie()
-  {
-      $this->display();
-  }
+    public function actorinfo(){
+        $Actor = M('Actor');
+        $result = $Actor -> find($this -> _get('id', 'intval'));
+        $this -> assign('result', $result);
+        $this -> display();
+    }
+
+    public function great(){
+        $this -> display();
+    }
+
 }

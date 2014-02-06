@@ -7,14 +7,14 @@ return array(
     'LANG_SWITCH_ON' => true,  //开启语言包
     'DEFAULT_LANG' => 'zh-cn', // 默认语言
 
-    'TMPL_L_DELIM' => '<!--{',  //模板左分隔符
-    'TMPL_R_DELIM' => '}--!>',  //模板右分隔符
+    'TMPL_L_DELIM' => '<-{',  //模板左分隔符
+    'TMPL_R_DELIM' => '}->',  //模板右分隔符
 
     'DB_TYPE' => 'mysql',  //数据库类型
     'DB_HOST' => 'localhost',  //服务器地址
-    'DB_NAME' => 'open',  //数据库名
+    'DB_NAME' => 'datangmedia',  //数据库名
     'DB_USER' => 'root',  //用户名
-    'DB_PWD' => '',  //密码
+    'DB_PWD' => 'jilexingqiu',  //密码
     'DB_PORT' => '3306',  //端口
     'DB_PREFIX' => 'datangmedia_',  //数据库表前缀
 

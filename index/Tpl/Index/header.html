@@ -14,18 +14,13 @@
                     <else/>
                     <li><a href="__URL__/artists">制作团队</a></li>
                 </if>
-                <if condition="ACTION_NAME eq 'actor'">
+                <if condition="(ACTION_NAME eq 'actor') OR (ACTION_NAME eq 'actorinfo')">
                     <li class="active"><a href="__URL__/actor">艺人</a></li>
                     <else/>
                     <li><a href="__URL__/actor">艺人</a></li>
                 </if>
-                <if condition="ACTION_NAME eq 'movie'">
-                    <li class="active"><a href="__URL__/movie">电影</a></li>
-                    <else/>
-                    <li><a href="__URL__/movie">电影</a></li>
-                </if>
-                <li><a href="#tv">电视</a></li>
-                <li><a href="#about">关于我们</a></li>
+
+                <li><a href="__URL__/great">大事记</a></li>
             </ul>
         </div>
     </div>
