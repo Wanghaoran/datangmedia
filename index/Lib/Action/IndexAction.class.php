@@ -18,8 +18,10 @@ class IndexAction extends Action
 
     public function actor(){
         $Actor = M('Actor');
-        $result = $Actor -> field('id,pic,name,description') -> order('sort ASC') -> select();
-        $this -> assign('result', $result);
+        $result_man = $Actor -> field('id,pic,name,description') -> where('sex=1') -> order('sort ASC') -> select();
+        $result_woman = $Actor -> field('id,pic,name,description') -> where('sex=2') -> order('sort ASC') -> select();
+        $this -> assign('result_man', $result_man);
+        $this -> assign('result_woman', $result_woman);
         $this -> display();
     }
 
